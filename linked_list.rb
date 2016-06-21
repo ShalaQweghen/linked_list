@@ -1,3 +1,12 @@
+class Node
+	attr_accessor :value, :next_node
+
+	def initialize(value)
+		@value = value
+		@next_node = nil
+	end
+end
+
 class LinkedList
 
 	def initialize
@@ -124,15 +133,6 @@ class LinkedList
 			c += 1
 		end
 		pos.next_node = pos.next_node.next_node
-	end
-end
-
-class Node
-	attr_accessor :value, :next_node
-
-	def initialize(value)
-		@value = value
-		@next_node = nil
 	end
 end
 
